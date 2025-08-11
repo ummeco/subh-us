@@ -16,7 +16,7 @@ export interface Section {
 // Helper function to get audio URL
 const getAudioUrl = (filename: string) => {
   // Use GitHub raw URL for audio files
-  return `https://raw.githubusercontent.com/ummeco/subh-us/main/public/audio/${encodeURIComponent(filename)}`;
+  return `https://raw.githubusercontent.com/ummeco/subh-us/main/audio/${encodeURIComponent(filename)}`;
 }
 
 export const seerahSections: Section[] = [
