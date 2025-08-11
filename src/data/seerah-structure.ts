@@ -13,6 +13,12 @@ export interface Section {
   lectures: Lecture[]
 }
 
+// Helper function to get audio URL
+const getAudioUrl = (filename: string) => {
+  // Use GitHub raw URL for audio files
+  return `https://raw.githubusercontent.com/ummeco/subh-us/main/public/audio/${encodeURIComponent(filename)}`;
+}
+
 export const seerahSections: Section[] = [
   {
     id: 'introduction',

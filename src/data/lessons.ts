@@ -63,7 +63,7 @@ const lessons: Module[] = seerahSections.map(section => ({
     description: lecture.description || section.description,
     video: null, // No video for audio lectures
     audio: {
-      url: `/audio/${lecture.audioFile}`,
+      url: `https://raw.githubusercontent.com/ummeco/subh-us/main/public/audio/${encodeURIComponent(lecture.audioFile)}`,
       duration: lecture.duration ? parseInt(lecture.duration) : 3600 // Default 60 minutes
     }
   }))

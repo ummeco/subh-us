@@ -1,0 +1,6 @@
+# Ignore audio files during Vercel build
+public/audio/
+*.mp3
+
+# Also ignore git
+.git/
